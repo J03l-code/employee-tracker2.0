@@ -1,0 +1,32 @@
+INSTRUCCIONES DE INSTALACIÓN Y DESPLIEGUE
+=========================================
+
+Este archivo comprimido contiene todo el código fuente de su proyecto "Employee Tracker".
+
+Pasos para publicar en internet:
+
+1. Requisitos del Servidor:
+   - Asegúrese de que su hosting o servidor tenga instalado **Node.js**.
+   - Este proyecto NO funcionará en un hosting que solo soporte PHP (como los planes básicos de Shared Hosting) a menos que tengan soporte específico para Node.js (ej. cPanel con "Setup Node.js App").
+
+2. Instalación:
+   - Suba el archivo ZIP a su servidor.
+   - Descomprímalo en la carpeta deseada.
+   - Abra una terminal en la carpeta `server` del proyecto descomprimido.
+   - Ejecute el siguiente comando para instalar las librerías necesarias:
+     
+     npm install
+
+3. Ejecución:
+   - Una vez instaladas las dependencias, inicie el servidor con:
+     
+     npm start
+
+   - La aplicación se iniciará por defecto en el puerto 3000.
+
+4. Base de Datos:
+   - El sistema utiliza SQLite. El archivo de base de datos se creará automáticamente o se usará el existente en la carpeta `server`.
+
+NOTAS IMPORTANTES:
+- La carpeta `node_modules` NO se incluye en este archivo para evitar errores de compatibilidad entre sistemas operativos (su computadora vs. el servidor). Por eso es OBLIGATORIO ejecutar `npm install`.
+- Si usa un servicio como Heroku, Railway, o Render, generalmente debe conectar su repositorio de GitHub en lugar de subir un archivo ZIP.
